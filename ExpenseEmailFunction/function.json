@@ -1,0 +1,15 @@
+{
+  "generatedBy": "Microsoft.NET.Sdk.Functions.Generator-1.0.6",
+  "configurationSource": "attributes",
+  "bindings": [
+    {
+      "type": "queueTrigger",
+      "queueName": "contosoexpenses",
+      "connection": "StorageConnectionString",
+      "name": "expenseItem"
+    }
+  ],
+  "disabled": false,
+  "scriptFile": "../bin/Contoso.Expenses.Functions.dll",
+  "entryPoint": "Contoso.Expenses.Functions.ExpenseEmailFunction.Run"
+}
